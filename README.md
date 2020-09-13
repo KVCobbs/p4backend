@@ -35,6 +35,12 @@ Sign up for user/users
 
 Input for user to add own insults
 
+One model for safe/childish insults
+
+One model for not safe/adult insults
+
+One model for Sign in and Authentication
+
 
 
 
