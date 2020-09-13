@@ -8,8 +8,8 @@ Project Overview
 |Day 1| Project Description | complete
 |Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| complete
 |Day 2| Working RestAPI | inomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | inomplete
-|Day 4| MVP & Bug Fixes | inomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | incomplete
+|Day 4| MVP & Bug Fixes | incomplete
 |Day 5| Final Touches and Present | Incomplete
 
 Project Description:
