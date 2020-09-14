@@ -14,7 +14,7 @@ Project Overview
 
 Project Description:
 
-My project is an updated insult library. The app will give you insults to save and use whenever you need. You can add your own special insults and even delete insults you dont think are good.
+My project is an updated insult library. The app will give you insults to save and use whenever you need. You can add your own special insults and even delete insults you dont think are good. The idea is more of a twitter like network to add and save and share insults. User is able to follow like and rate other users. 
 
 
 
