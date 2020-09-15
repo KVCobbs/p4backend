@@ -18,7 +18,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
         # List all of the fields that could possibly be included in a request
         # or response
         fields = ('username', 'email', 'password', 'token')
-       #original: fields = ('username', 'email', 'first_name', 'last_name', 'password', 'token')
+
+    # original: fields = ('username', 'email', 'first_name', 'last_name', 'password', 'token')
 
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
@@ -71,5 +72,5 @@ class UserListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'password', 'email')
-        #changed this from 'id' to password
-        #original ( 'id', 'username', 'email')
+        # changed this from 'id' to password
+        # original ( 'id', 'username', 'email')
