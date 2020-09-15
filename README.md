@@ -82,3 +82,13 @@ Issues and Resolutions
 Use this section to list of all major issues encountered and their resolution.
 
 
+raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Cannot import 'authentication'. Check that 'apps.authentication.apps.AuthenticationConfig.name' is
+correct.
+
+This was an error I kept getting and my issues was that I tried to speed run through making the 
+whole authentication the Suresh way and I couldn't even figure out where the issue was even with 
+everyone in my group helping me. Anyway the resolution was starting over so it's 9/15/2020 right now 
+and I just copied Alex's authentication and refactored that and my server can run right now. 
+
+
