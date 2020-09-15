@@ -6,7 +6,7 @@ from rest_framework import serializers
 class InsultSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ['name']
+        fields = ['text']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
