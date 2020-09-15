@@ -35,7 +35,7 @@ class UserManager(BaseUserManager):
             email=self.normalize_email(email),
             # first_name=first_name,
             # last_name=last_name,
-             is_staff=False,
+            is_staff=False,
         )
         user.set_password(password)
         user.save()
@@ -70,7 +70,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     # updated_at = models.DateTimeField(auto_now=True)
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email']
+    REQUIRED_FIELDS = []  # 'email'
 
     # *** REQUIRED_FIELDS = ['email', 'first_name', 'last_name'] ***
 

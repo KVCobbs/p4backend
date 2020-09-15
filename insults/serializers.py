@@ -4,9 +4,11 @@ from rest_framework import serializers
 
 
 class InsultSerializer(serializers.HyperlinkedModelSerializer):
+    user = serializers.ReadOnlyField(source='user.username')
+
     class Meta:
-        model = User
-        fields = ['text']
+        model = Insult
+        fields = ['user', 'text']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
