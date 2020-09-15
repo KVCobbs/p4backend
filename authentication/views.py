@@ -22,8 +22,8 @@ class RegistrationAPIView(APIView):
                 "email": request.data.get('email'),
                 "username": request.data.get('username'),
                 "password": request.data.get('password'),
-                "first_name": request.data.get('first_name'),
-                "last_name": request.data.get('last_name'),
+                #  "first_name": request.data.get('first_name'),
+                #  "last_name": request.data.get('last_name'),
             }
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
@@ -57,4 +57,3 @@ class UserListViewSet(ReadOnlyModelViewSet):
     queryset = User.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = UserListSerializer
-

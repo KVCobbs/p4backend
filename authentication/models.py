@@ -19,8 +19,9 @@ class UserManager(BaseUserManager):
     to create `User` objects.
     """
 
-    def create_user(self, username, email, password=None, first_name=None,
-                    last_name=None):
+    def create_user(self, username, email, password):
+        # original: (self, username, email, password=None, first_name=None,
+        # last_name=None):
         """
         Create and return a `User` with an email, username, first_name, last_name
         and password.
@@ -32,9 +33,9 @@ class UserManager(BaseUserManager):
         user = self.model(
             username=username,
             email=self.normalize_email(email),
-            first_name=first_name,
-            last_name=last_name,
-            is_staff=False,
+            # first_name=first_name,
+            # last_name=last_name,
+             is_staff=False,
         )
         user.set_password(password)
         user.save()
@@ -61,12 +62,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     """
     username = models.CharField(db_index=True, max_length=255, unique=True)
     email = models.EmailField(db_index=True, unique=True)
-    first_name = models.CharField(max_length=255, null=True, blank=True)
-    last_name = models.CharField(max_length=255, null=True, blank=True)
-    is_active = models.BooleanField(default=True)
+    # first_name = models.CharField(max_length=255, null=True, blank=True)
+    # last_name = models.CharField(max_length=255, null=True, blank=True)
+    # is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # updated_at = models.DateTimeField(auto_now=True)
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
