@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
     'insults.apps.InsultsConfig',
-
+    'profiles.apps.ProfilesConfig',
 ]
 
 MIDDLEWARE = [

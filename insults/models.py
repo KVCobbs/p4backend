@@ -6,6 +6,7 @@ from authentication.models import User
 
 
 class Insult(models.Model):
+    objects = None
     text = models.TextField()
     user = models.ForeignKey(
         User,
