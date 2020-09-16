@@ -95,3 +95,11 @@ everyone in my group helping me. Anyway the resolution was starting over so it's
 and I just copied Alex's authentication and refactored that and my server can run right now. 
 
 
+You are trying to add a non-nullable field 'image_url' to user without a default; we can't do that 
+(the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+
+This was just weird to get and I was unsure how to answer the first time. 
+

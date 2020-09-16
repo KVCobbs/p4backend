@@ -62,6 +62,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     """
     username = models.CharField(db_index=True, max_length=255, unique=True)
     email = models.EmailField(db_index=True, unique=True)
+    image_url = models.URLField(max_length=255)
+
     # first_name = models.CharField(max_length=255, null=True, blank=True)
     # last_name = models.CharField(max_length=255, null=True, blank=True)
     # is_active = models.BooleanField(default=True)
