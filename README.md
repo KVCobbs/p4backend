@@ -54,9 +54,11 @@ A button for insult library to have adult insults.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Frontend/Backend connection | H | 8hr | -hr | -hr|
-| Generate insults randomly | H | 8hr | -hr | -hr|
-| Login/Sign up for users | H | 5hr | -hr | -hr|
-| Input for users to add own insults | H | 5hr | -hr | -hr|
+| Show a thread of insults from different users| H | 8hr | -hr | -hr|
+| Login/Sign up for users | H | 5hr | 6hr | 6hr|
+| Text field Input for users to add own insults | H | 5hr | -hr | -hr|
+| Users being able to edit insults after posting insult | H | 8hr | -hr | -hr|
+| - | H | 8hr | -hr | -hr|
 
 
 
@@ -66,7 +68,8 @@ A button for insult library to have adult insults.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adult insult version | L | 6hr | -hr | -hr|
-| Adult insult version button | L | 6hr | -hr | -hr|
+| Asking for age to apply agre restrictions | L | 6hr | -hr | -hr|
+
 
 
 Additional Libraries
