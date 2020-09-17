@@ -1,4 +1,3 @@
-import profile
 
 from django.shortcuts import render
 from rest_framework.permissions import IsAuthenticated, AllowAny
@@ -44,3 +43,4 @@ class ProfileViewSet(viewsets.ModelViewSet):
         if not request.user == profile.user:
             raise PermissionDenied("Lol Loser. You cannot delete this")
         return Response({super().destroy(request, *args, **kwargs), })
+

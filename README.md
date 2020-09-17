@@ -69,6 +69,8 @@ A button for insult library to have adult insults.
 | --- | :---: |  :---: | :---: | :---: |
 | Adult insult version | L | 6hr | -hr | -hr|
 | Asking for age to apply agre restrictions | L | 6hr | -hr | -hr|
+| A customizable profile page for users | L | 6hr | -hr | -hr|
+
 
 
 
@@ -102,4 +104,19 @@ Please select a fix:
  2) Quit, and let me add a default in models.py
 
 This was just weird to get and I was unsure how to answer the first time. 
+
+
+   router.register(r'Profile', views.ProfileViewSet)
+  File "C:\Users\kenny\Desktop\seir-6-29\student\unit04\week02\day04\project04\venv\lib\site-packages\rest_framework\routers.
+py", line 55, in register
+    basename = self.get_default_basename(viewset)
+  File "C:\Users\kenny\Desktop\seir-6-29\student\unit04\week02\day04\project04\venv\lib\site-packages\rest_framework\routers.
+py", line 138, in get_default_basename
+    assert queryset is not None, '`basename` argument not specified, and could ' \
+AssertionError: `basename` argument not specified, and could not automatically determine the name from the viewset, as it doe
+s not have a `.queryset` attribute.
+
+My profile urls wont connect at all and IDK. 
+
+
 
