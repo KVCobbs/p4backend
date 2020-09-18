@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'insults.apps.InsultsConfig',
     'profiles.apps.ProfilesConfig',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,6 +55,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = ['http://localhost:8080']
+# If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
+CORS_ORIGIN_REGEX_WHITELIST = ['http://localhost:8080']
 
 ROOT_URLCONF = 'p4backend.urls'
 

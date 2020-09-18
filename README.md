@@ -56,9 +56,12 @@ A button for insult library to have adult insults.
 | Frontend/Backend connection | H | 8hr | -hr | -hr|
 | Show a thread of insults from different users| H | 8hr | -hr | -hr|
 | Login/Sign up for users | H | 5hr | 6hr | 6hr|
-| Text field Input for users to add own insults | H | 5hr | -hr | -hr|
+| Text field Input for users to add own insults | H | 5hr | 3hr | 3.5hr|
 | Users being able to edit insults after posting insult | H | 8hr | -hr | -hr|
+| Profile pages for user| H | 8hr | -hr | -hr|
 | - | H | 8hr | -hr | -hr|
+| - | H | 8hr | -hr | -hr|
+
 
 
 
@@ -75,7 +78,7 @@ A button for insult library to have adult insults.
 
 
 Additional Libraries
-N/A
+pip install django-cors-headers
 
 
 
