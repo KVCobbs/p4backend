@@ -18,7 +18,15 @@ from django.urls import path, include
 
 from rest_framework import urls
 
+import authentication
+# from authentication import urls
+import insults
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth/', include(urls)),
+    # path('auth/', include(urls)),
+    path('users/', include('authentication.urls')),
+    path('profiles/', include('profiles.urls')),
+    path('api/', include('insults.urls')),
+
 ]

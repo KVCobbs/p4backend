@@ -54,9 +54,11 @@ A button for insult library to have adult insults.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Frontend/Backend connection | H | 8hr | -hr | -hr|
-| Generate insults randomly | H | 8hr | -hr | -hr|
-| Login/Sign up for users | H | 5hr | -hr | -hr|
-| Input for users to add own insults | H | 5hr | -hr | -hr|
+| Show a thread of insults from different users| H | 8hr | -hr | -hr|
+| Login/Sign up for users | H | 5hr | 6hr | 6hr|
+| Text field Input for users to add own insults | H | 5hr | -hr | -hr|
+| Users being able to edit insults after posting insult | H | 8hr | -hr | -hr|
+| - | H | 8hr | -hr | -hr|
 
 
 
@@ -66,7 +68,10 @@ A button for insult library to have adult insults.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adult insult version | L | 6hr | -hr | -hr|
-| Adult insult version button | L | 6hr | -hr | -hr|
+| Asking for age to apply agre restrictions | L | 6hr | -hr | -hr|
+| A customizable profile page for users | L | 6hr | -hr | -hr|
+
+
 
 
 Additional Libraries
@@ -90,5 +95,28 @@ This was an error I kept getting and my issues was that I tried to speed run thr
 whole authentication the Suresh way and I couldn't even figure out where the issue was even with 
 everyone in my group helping me. Anyway the resolution was starting over so it's 9/15/2020 right now 
 and I just copied Alex's authentication and refactored that and my server can run right now. 
+
+
+You are trying to add a non-nullable field 'image_url' to user without a default; we can't do that 
+(the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+
+This was just weird to get and I was unsure how to answer the first time. 
+
+
+   router.register(r'Profile', views.ProfileViewSet)
+  File "C:\Users\kenny\Desktop\seir-6-29\student\unit04\week02\day04\project04\venv\lib\site-packages\rest_framework\routers.
+py", line 55, in register
+    basename = self.get_default_basename(viewset)
+  File "C:\Users\kenny\Desktop\seir-6-29\student\unit04\week02\day04\project04\venv\lib\site-packages\rest_framework\routers.
+py", line 138, in get_default_basename
+    assert queryset is not None, '`basename` argument not specified, and could ' \
+AssertionError: `basename` argument not specified, and could not automatically determine the name from the viewset, as it doe
+s not have a `.queryset` attribute.
+
+My profile urls wont connect at all and IDK. 
+
 
 
