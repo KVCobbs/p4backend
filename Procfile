@@ -1,2 +1,3 @@
-web: gunicorn project.wsgi
+web: gunicorn p4backend.wsgi
+
 
