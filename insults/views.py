@@ -29,8 +29,10 @@ class InsultViewSet(viewsets.ModelViewSet):
 
     # Create
     def create(self, request, *args, **kwargs):
+        print(request.user)
         insult = Insult.objects.filter(
             user=request.data.get('user'),
+            text=request.data.get('text'),
         )
 
         if insult:
@@ -61,8 +63,10 @@ class UserInsultViewSet(viewsets.ModelViewSet):
 
     # Create
     def create(self, request, *args, **kwargs):
+        print(request.user)
         insult = Insult.objects.filter(
             user=request.data.get('user'),
+            text=request.data.get('text'),
         )
 
         if insult:
