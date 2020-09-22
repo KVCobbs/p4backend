@@ -3,10 +3,10 @@ from rest_framework import routers
 from django.conf.urls import url
 from authentication.models import User
 from insults.models import Insult
-from insults.views import InsultViewSet, UserInsultViewSet
+from insults.views import InsultViewSet, UserInsultViewSet, StupidViewSet
 
 router = routers.DefaultRouter()
-router.register('insults', InsultViewSet, basename='insults')
+router.register('insults', StupidViewSet, basename='insults')
 
 custom_urlpatterns = [
     url(r'users/(?P<user_pk>\d+)/$', UserInsultViewSet.as_view({'get': 'list'}), name='user_insults'),

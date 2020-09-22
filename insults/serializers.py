@@ -8,7 +8,7 @@ class InsultSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Insult
-        fields = ['user', 'text']
+        fields = ['user', 'text', 'id']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
